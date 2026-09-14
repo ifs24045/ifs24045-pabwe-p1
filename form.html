@@ -1,6 +1,6 @@
 <!-- form.html -->
 <!doctype html>
-<html>
+<html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,42 +9,39 @@
 </head>
 <body>
 
-<!-- Navigasi utama, sama di semua halaman -->
+<header>
 <nav>
 <a href="index.html">IMDb Top 3 Movies</a> &nbsp;|&nbsp;
 <a href="blog.html">Dev Blogs</a> &nbsp;|&nbsp;
 <a href="form.html">Form Pendaftaran</a> &nbsp;|&nbsp;
 <a href="cv.html">CV</a>
 </nav>
+</header>
+
+<main>
 
 <h1>Form Pendaftaran Akun</h1>
 
-<!-- Form pendaftaran, semua input dibungkus fieldset -->
 <form>
 <fieldset>
 <legend>Daftar Akun</legend>
 
-<!-- Nama lengkap: text -->
-<p>Nama Lengkap: <input type="text" id="nama" name="nama"></p>
+<p><label for="nama">Nama Lengkap:</label> <input type="text" id="nama" name="nama"></p>
 <hr>
 
-<!-- Jenis kelamin: radio -->
 <p>Jenis Kelamin:
 <input type="radio" id="lk" name="gender" value="laki-laki"><label for="lk">Laki-Laki</label>
 <input type="radio" id="pr" name="gender" value="perempuan"><label for="pr">Perempuan</label>
 </p>
 <hr>
 
-<!-- Tempat lahir: text -->
-<p>Tempat Lahir: <input type="text" id="tempat_lahir" name="tempat_lahir"></p>
+<p><label for="tempat_lahir">Tempat Lahir:</label> <input type="text" id="tempat_lahir" name="tempat_lahir"></p>
 <hr>
 
-<!-- Tanggal lahir: date -->
-<p>Tanggal Lahir: <input type="date" id="tanggal_lahir" name="tanggal_lahir"></p>
+<p><label for="tanggal_lahir">Tanggal Lahir:</label> <input type="date" id="tanggal_lahir" name="tanggal_lahir"></p>
 <hr>
 
-<!-- Agama: select -->
-<p>Agama:
+<p><label for="agama">Agama:</label>
 <select id="agama" name="agama">
 <option value="" selected disabled>--- Pilih Agama ---</option>
 <option value="islam">Islam</option>
@@ -57,7 +54,6 @@
 </p>
 <hr>
 
-<!-- Hobi: checkbox -->
 <p>Hobi:
 <input type="checkbox" id="hobi1" name="hobi" value="olahraga"><label for="hobi1">Olahraga</label>
 <input type="checkbox" id="hobi2" name="hobi" value="membaca"><label for="hobi2">Membaca</label>
@@ -65,17 +61,14 @@
 </p>
 <hr>
 
-<!-- Password -->
-<p>Password: <input type="password" id="password" name="password"></p>
+<p><label for="password">Password:</label> <input type="password" id="password" name="password"></p>
 <hr>
 
-<!-- Persetujuan: checkbox -->
 <p>
 <input type="checkbox" id="setuju" name="setuju" value="ya">
 <label for="setuju">Dengan mendaftar saya setuju dengan Ketentuan dan Kebijakan Privasi Aplikasi.</label>
 </p>
 
-<!-- Tombol reset dan submit -->
 <p>
 <input type="reset" value="Reset">
 <input type="submit" value="Submit">
@@ -83,6 +76,8 @@
 
 </fieldset>
 </form>
+
+</main>
 
 </body>
 </html>

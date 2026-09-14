@@ -1,6 +1,6 @@
 <!-- cv.html -->
 <!doctype html>
-<html>
+<html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,27 +9,47 @@
 </head>
 <body>
 
-<!-- Navigasi utama, sama di semua halaman -->
+<header>
 <nav>
 <a href="index.html">IMDb Top 3 Movies</a> &nbsp;|&nbsp;
 <a href="blog.html">Dev Blogs</a> &nbsp;|&nbsp;
 <a href="form.html">Form Pendaftaran</a> &nbsp;|&nbsp;
 <a href="cv.html">CV</a>
 </nav>
+</header>
 
-<!-- Wrapper agar lebar konten tidak memenuhi layar -->
+<main>
+
 <table align="center" width="900" cellpadding="15" cellspacing="0" border="0">
 <tr><td>
 
-<!-- Bagian atas: foto & Pendidikan/Pengalaman (kiri), Identitas & Keahlian (kanan) -->
+<!-- Baris identitas dulu: foto di kiri, nama (h1) di kanan, supaya h1 jadi heading pertama di DOM -->
 <table border="0" cellpadding="10" cellspacing="0" width="100%">
 <tr>
 
-<td valign="top" width="35%">
+<td valign="top" width="35%" align="center">
+<img src="img/foto-profil.jpg" width="200" height="200" alt="Foto Thimoty Geraldino Sianipar">
+</td>
 
-<img src="img/foto-profil.jpg" width="200" height="200" alt="Foto Rangga Pratama">
+<td valign="top" width="65%">
+<h1>Thimoty Geraldino Sianipar</h1>
+<p><b>Sarjana Informatika</b></p>
+<hr width="80" align="left">
+<p>Email: thimotygeraldinosianipar@gmail.com<br>
+WA: +62 812 3456 7890</p>
+<p>Saya adalah mahasiswa yang antusias di bidang pengembangan web dan aplikasi, senang mempelajari teknologi baru, memiliki rasa ingin tahu tinggi, terbiasa bekerja dalam tim, dan menyukai tantangan dalam menyelesaikan masalah melalui kode.</p>
+</td>
 
-<!-- Pendidikan: list tidak berurutan -->
+</tr>
+</table>
+
+<hr>
+
+<table border="0" cellpadding="10" cellspacing="0" width="100%">
+<tr>
+
+<td valign="top" width="50%">
+
 <h2>Pendidikan</h2>
 <hr width="60" align="left">
 <ul>
@@ -39,7 +59,6 @@
 <li>SD Negeri 4 Balige (2008 - 2014)</li>
 </ul>
 
-<!-- Pengalaman -->
 <h2>Pengalaman</h2>
 <hr width="60" align="left">
 <ul>
@@ -55,18 +74,8 @@
 
 </td>
 
-<td valign="top" width="65%">
+<td valign="top" width="50%">
 
-<!-- Identitas: nama heading 1, program studi heading 3, email/WA heading 6 -->
-<h1>Thimoty Geraldino Sianipar</h1>
-<h3>Sarjana Informatika</h3>
-<hr width="80" align="left">
-<h6>Email: thimotygeraldinosianipar@gmail.com</h6>
-<h6>WA: +62 812 3456 7890</h6>
-
-<p>Saya adalah mahasiswa yang antusias di bidang pengembangan web dan aplikasi, senang mempelajari teknologi baru, memiliki rasa ingin tahu tinggi, terbiasa bekerja dalam tim, dan menyukai tantangan dalam menyelesaikan masalah melalui kode.</p>
-
-<!-- Keahlian: list tidak berurutan -->
 <h2>Keahlian</h2>
 <hr width="60" align="left">
 
@@ -103,7 +112,6 @@
 
 <hr>
 
-<!-- Sertifikat: list berurutan -->
 <h2>Sertifikat</h2>
 <hr width="60" align="left">
 
@@ -121,7 +129,6 @@
 <li>Version Control with Git (September 2024)</li>
 </ol>
 
-<!-- Portfolio: list berurutan -->
 <h2>Portfolio</h2>
 <hr width="60" align="left">
 
@@ -148,6 +155,8 @@
 
 </td></tr>
 </table>
+
+</main>
 
 </body>
 </html>
