@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form Pendaftaran Akun</title>
+</head>
+<body>
+
+<nav>
+<a href="index.html">IMDb Top 3 Movies</a> &nbsp;|&nbsp;
+<a href="blog.html">Dev Blogs</a> &nbsp;|&nbsp;
+<a href="form.html">Form Pendaftaran</a> &nbsp;|&nbsp;
+<a href="cv.html">CV</a>
+</nav>
+
+<h1>Form Pendaftaran Akun</h1>
+
+<form>
+<fieldset>
+<legend>Daftar Akun</legend>
+
+<p>Nama Lengkap: <input type="text" id="nama" name="nama"></p>
+<hr>
+
+<p>Jenis Kelamin:
+<input type="radio" id="lk" name="gender" value="laki-laki"><label for="lk">Laki-Laki</label>
+<input type="radio" id="pr" name="gender" value="perempuan"><label for="pr">Perempuan</label>
+</p>
+<hr>
+
+<p>Tempat Lahir: <input type="text" id="tempat_lahir" name="tempat_lahir"></p>
+<hr>
+
+<p>Tanggal Lahir: <input type="date" id="tanggal_lahir" name="tanggal_lahir"></p>
+<hr>
+
+<p>Agama:
+<select id="agama" name="agama">
+<option value="" selected disabled>--- Pilih Agama ---</option>
+<option value="islam">Islam</option>
+<option value="katolik">Katolik</option>
+<option value="protestan">Protestan</option>
+<option value="hindu">Hindu</option>
+<option value="buddha">Buddha</option>
+<option value="konghucu">Konghucu</option>
+</select>
+</p>
+<hr>
+
+<p>Hobi:
+<input type="checkbox" id="hobi1" name="hobi" value="olahraga"><label for="hobi1">Olahraga</label>
+<input type="checkbox" id="hobi2" name="hobi" value="membaca"><label for="hobi2">Membaca</label>
+<input type="checkbox" id="hobi3" name="hobi" value="ngoding"><label for="hobi3">Ngoding</label>
+</p>
+<hr>
+
+<p>Password: <input type="password" id="password" name="password"></p>
+<hr>
+
+<p>
+<input type="checkbox" id="setuju" name="setuju" value="ya">
+<label for="setuju">Dengan mendaftar saya setuju dengan Ketentuan dan Kebijakan Privasi Aplikasi.</label>
+</p>
+
+<p>
+<input type="reset" value="Reset">
+<input type="submit" value="Submit">
+</p>
+
+</fieldset>
+</form>
+
+</body>
+</html>
